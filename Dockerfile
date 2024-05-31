@@ -109,3 +109,5 @@ RUN rm /usr/bin/python3 && ln -s python3.7 /usr/bin/python3
 RUN apt update && apt install -y \
 	libfontenc-dev libxaw7-dev libxcomposite-dev libxkbfile-dev libxmu-dev libxmuu-dev libxpm-dev libxres-dev libxtst-dev libxcb-render-util0-dev libxcb-xkb-dev libxcb-icccm4-dev libxcb-image0-dev libxcb-keysyms1-dev libxcb-xinerama0-dev uuid-dev libxcb-cursor-dev libxcb-composite0-dev libxcb-ewmh-dev libxcb-res0-dev libxcb-util-dev libxcb-util0-dev libxcb-dri2-0-dev libxcb-dri3-dev libxcb-glx0-dev libxcb-present-dev libxcb-sync-dev libxcb-randr0-dev libxdamage-dev libx11-xcb-dev	libxcursor-dev libxinerama-dev libxrandr-dev libxrender-dev libxss-dev libxv-dev libxxf86vm-dev pkg-config
 
+SHELL ["/bin/bash", "-c"]
+RUN source /emsdk/emsdk_env.sh && npm install -g typescript
